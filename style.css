@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: "Alice", serif;
   font-weight: 400;
@@ -13,18 +18,27 @@ body {
 
 #page {
   width: 800px;
-
   box-sizing: border-box;
   margin: 48px auto;
   padding: 24px;
-
   border-radius: 24px;
-
   background-color: #f0e8c2;
 }
 
 img {
   border-radius: 16px;
+}
+
+main {
+  padding: 24px;
+}
+
+section + section {
+  margin-top: 24px;
+}
+
+p + p {
+  margin-top: 12px;
 }
 
 h1 {
@@ -39,4 +53,10 @@ h2 {
 h1,
 h2 {
   color: #291b1a;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+ul {
+  padding-left: 28px;
 }
